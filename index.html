@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>ARQUIRU</title>
+  <style type="text/css">
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+  </style>
+ <script type="text/javascript">
+// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+ </script>
+
+
+
+</head>
+<body>
+<section>
+  <!--for demo wrap-->
+  <h1>Solicitud de Materiales</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cantidad</th>
+          <th>Producto</th>
+          <th>Uso</th>
+          <th>Precio</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>02</td>
+          <td>Lavamanos estandar con Pedestal</td>
+          <td>Baños trabajadores - Oficina Settmarca</td>
+          <td>1.000.000 Bs.F. c/u</td>
+          <td>2.000.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>02</td>
+          <td>Inodoro estandar</td>
+          <td>Baños trabajadores - Oficina Settmarca</td>
+          <td>1.000.000 Bs.F. c/u</td>
+          <td>2.000.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>01</td>
+          <td>Lavamano de 55cm x 37 cm Acalia Concept</td>
+          <td>Baño Oficina Principal Settmarca</td>
+          <td>2.000.000 Bs.F. c/u</td>
+          <td>2.000.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>01</td>
+          <td>Inodoro marca Acalia Concept</td>
+          <td>Baño Oficina Principal Settmarca</td>
+          <td>2.000.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>02</td>
+          <td>Extractor de 12" V 110</td>
+          <td>Baños trabajadores - Oficina Settmarca</td>
+          <td>500.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>01</td>
+          <td>Puerta Metalica de Seguridad Multilock</td>
+          <td>Entrada principal de oficina Settmarca con marco 0.90Mts X 2.10 Mts</td>
+          <td>2.000.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td>01</td>
+          <td>Galon de Pintura de Fondo Blanco Pinta 25.2Mts2</td>
+          <td>Pintura de fondo para las laminas de la fachada Serlago</td>
+          <td>350.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td>ESPERANDO CONFIRMAR CANTIDAD</td>
+          <td>Ceramica Blanca 30 x 30</td>
+          <td>Baño de trabajadores y Oficina Principal Settmarca</td>
+          <td>83.000 Bs.F. el Mts2</td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td>4 (VERIFICAR MEDIDAS)</td>
+          <td>Rejillas De Aire Acondicionado</td>
+          <td>Para ductos de las oficinas</td>
+          <td>40.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>3 (Verificar fecha de vencimiento para uso en Noviembre)</td>
+          <td>Cuñetes de Pasta Profesional</td>
+          <td>Para oficinas settmarca usar en paredes y techo</td>
+          <td>400.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>ESPERANDO CONFIRMAR CANTIDAD</td>
+          <td>Pintura Blanca para interior</td>
+          <td>Para oficinas settmarca usar en paredes y techo</td>
+          <td>500.000 Bs.F.C/U </td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td> 3 Para 25Mts2</td>
+          <td>Pintura Azul Rey</td>
+          <td>Para Volado en Fachada</td>
+          <td>750.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>ESPERANDO CALCULOS</td>
+          <td>Malla Electrosoldada Tipo Truckson 6x6</td>
+          <td>Para placa de techo escalera</td>
+          <td>800.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>ESPERANDO CALCULOS</td>
+          <td>Tubo estructural de 100 x 100 x 5mm x 6Mts </td>
+          <td>Para placa de techo escalera</td>
+          <td>350.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Por calcular cantidad al Finalizar frisos Diciembre</td>
+          <td>Pintura para exterior Vinotinto</td>
+          <td>Fachada Serlago</td>
+          <td>700.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Por calcular cantidad al Finalizar oficinas Settmarca Diciembre</td>
+          <td>Pintura de aceite Gris Tormenta</td>
+          <td>Para escalera y pasillo de Settmarca</td>
+          <td>700.000 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>05</td>
+          <td>Cajetin 4"x2" de Plastico electrico</td>
+          <td>Para iluminacion exterior </td>
+          <td>1.500 Bs.F. c/u</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>CALCULANDO</td>
+          <td>TUBOS DE 4" PVC de Aguas Negras</td>
+          <td>Para rehabilitar tanquillas existenres en sitio</td>
+          <td>30.000 Bs.F. c/u de 3mts</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- follow me template -->
+<div class="made-with-love">
+  Made with
+  <i></i> by
+  <a target="_blank" href="#">Arq.Victor Rojas C.</a>
+</div>
+</body></html>
